@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid rgba(176, 0, 0, 0);
+            padding: 50px 50px;
+            width:  900px;
+            height: 900px;
+
+            background-image: url(/images/sea.jpg);
+            /* 기본적으로 이미지가 가로세로 반복패턴 */
+            background-repeat: no-repeat;
+            background-position: center;
+            /* 이미지가 가운데로 감 */
+            background-size: cover;
+            /* 전체 영역을 이미지로 가득 채운다. 이미지가 잘릴 수 있다. */
+            
+            /* background-color: blue; */
+            /* 패딩까지 배경색상이 적용됨 */
+            /* background-clip: content-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
