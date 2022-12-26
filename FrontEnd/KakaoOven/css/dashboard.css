@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-size : 14px
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration:  none;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0px 15px;
+
+    width: 1170px;
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #383d40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.brand-text {
+    display: flex;
+    padding: 15px;
+    padding-left: 0px;
+    height: 50px;
+}
+
+.bt-left {
+    line-height: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.bt-right {
+    padding: 1px 3px;
+
+    line-height: 9px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.nav {
+    margin : 0;
+    padding: 0;
+    list-style-type: none;
+    /* 목록에서 점을 빼기  */
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+}
+
+
+.profile-image {
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-toggle .name {
+    /* dropdwon-toggle 안에 있는 name만 적용한다 */
+    padding: 0px 10px;
+    
+}
+
+.dropdown-toggle .fa-caret-down {
+    font-size: 11px;
+}
+
+/* .page-header::before {
+    display: table;
+    content: " ";
+} */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    /* before까지 정렬하므로 제목이 가운데로 간다. */
+}
+
+.pull-left {
+    margin: 20px 0px 10px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.pull-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 325px;
+    height: 36px;
+}
+
+.search-project {
+    position: relative;
+    width: 226.5px;
+    height: 34px;
+}
+
+.form-control {
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 42.5px 6px 12px;
+    height: 34px;    
+    background-color: #fff;
+    color: #555;
+    outline: none;
+    /* 클릭했을 때 input에 진한 검정색 테두리 씌우는 게 outline */
+
+}
+
+.search-project .fa-magnifying-glass {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 34px;
+    height: 34px;
+}
+
+.form-control:focus {
+    border: 1px solid #2fafff;
+    box-shadow: 0px 0px 3px 1px #97d7ff;
+}
+
+.btn-toggle {
+    display: flex;
+    align-items: center;
+   
+    border: 1px solid #ccc;
+    border-radius: 2px;
+
+    width: 80px;
+    height: 34px;
+}
+
+
+.change-viewtype {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+
+    border: none;
+    padding: 6px 12px;
+    width: 39px;
+    height: 32px;
+
+    cursor: pointer;
+}
+
+.btn-toggle .change-viewtype:first-child {
+    border-right: 1px solid #ccc;
+    /* 두 아이콘 사이에 선을 하나 긋는다. */
+}
+
+.active {
+    background: radial-gradient(circle, #f0f0f0, #e6e6e6, #ccc)
+    /* 원형 그라데이션, 젤 안쪽, 중간, 끝 색)  */
+}
+
+.change-viewtype:not([type=active]):hover {
+    background-color: #e6e6e6;
+}
