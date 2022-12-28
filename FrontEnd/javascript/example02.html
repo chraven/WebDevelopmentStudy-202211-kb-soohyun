@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+</head>
+<body>
+    <script>
+        // 자료형
+        // number, string, boolean
+        var num = 1000;
+        console.log(num);
+        console.log(typeof(num));
+        var str = 'string';
+        console.log(str);
+        console.log(typeof(str));
+        var bool = true;
+        console.log(bool);
+        console.log(typeof(bool));
+        // typeof는 자료형을 보여줌
+
+        // array(배열), object(객체)
+        var arr = [1, 2, 3, 4, 5];
+        arr[2] = 10;
+        // 인덱스 2번이 바뀌어도 브라우저는 전과 다른 걸 인식 못 함. 메모리주소가 안 바뀌어서.
+        console.log(arr);
+        console.log(typeof(arr));
+        // object로 나옴. 기본형 타입이 아닌 애들은 데이터가 아닌 첫번째 시작하는 메모리 주소를 저장. 이런 애들은 object
+
+        var obj = {
+            'name' : '홍길동',
+            'age'  : 20
+        }
+        // json 형태의 key,value. 속성 : 데이터
+        console.log(obj);
+        console.log(obj.name);
+        console.log(typeof(obj));
+        
+        // undefined, null
+        console.log(typeof(cat));
+        var dog;
+        console.log(dog);
+        console.log(typeof(dog));
+        var bird = null
+        console.log(bird);
+        console.log(typeof(bird));
+
+        //산술연산
+        var a = 10;
+        var b = 3;
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+
+        console.log(++a);
+        console.log(a++);
+        // 출력하기 전에 1 증가, 출력하고 나서 1증가
+
+        console.log(--a);
+        console.log(a--);
+
+
+        //대입연산
+
+        var c = 5;
+        console.log(c = 5);
+        //연산이 처리되고 처리된 변수를 출력.
+        console.log(c += 5);
+        console.log(c -= 5);
+        console.log(c *= 5);
+        console.log(c /= 5);
+        console.log(c %= 5);
+        console.log(c);
+
+    </script>
+</body>
+</html>
