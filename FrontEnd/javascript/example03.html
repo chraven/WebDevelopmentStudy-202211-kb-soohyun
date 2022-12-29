@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+    <script src="js/common.js"></script>
+
+    <script>
+        // function a() {
+        //     // console.log(number); 호이스팅을 크롬에서 막아놔서 undifend가 뜬다. 
+        //     var number = 10;
+        //     var number = 10;
+        //     console.log(number);
+        // }
+        // a()
+
+        //Function 1
+        function func1() {
+            alert('func1 - 안녕하세요.');
+        }
+        // func1();        
+        // Function 2
+        // let, const
+        const func2 = () => {
+            alert('func2 - 안녕하세요.');
+        }
+        // 인자를 받고 또다시 인자를 받아 활용할 수 있다.  const func2 = () => () => { alert('func2 - 안녕하세요.');}
+        // func2();
+        const moveExample02 = () => {
+            location.href;
+        } 
+
+    </script>
+</head>
+<body>
+    <button id="btn1">Btn 1</button>
+    <input style="width: 100px;" />
+    <!-- input은 요소가 안들어가는 경우도 있기에 그냥 시작요소에서 /를 써서 닫기도 함 -->
+
+    <button onclick="helloworld();">Hello World!</button>
+
+    <button onclick="moveExample02()">Move 02</button>
+    <a href="./example02.html">move 02</a>
+
+    <script>
+        // const onClickhandler = document.querySelector('#btn1'); querySelector는 id를 고르는 역할.
+        // onClickhandler.onclick = func1;
+        document.querySelector('#btn1').onclick = func2;
+    </script>
+</body>
+</html>
