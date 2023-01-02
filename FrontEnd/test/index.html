@@ -5,107 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김수현 화면구현 본평가</title>
-    <style>
-        body{
-            margin: 0px;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        .container {
-            display: flex;
-        }
-        /* Side navigation */
-        .side-nav-bar {
-            height: 100vh;
-            top: 0px;
-            left: 0px;
-            padding: 10px;
-
-            background-color: #c4c4c4;
-        }
-        .side-nav-item {
-            height: 40px;
-            padding-bottom: 30px;
-
-            display: block;
-        }
-        .side-nav-icon{
-            width: 40px;
-            height: 40px;
-        }
-
-        .main-container {
-            height: 100vh;
-            width: 100vw;
-        }
-        .main-cover {
-            width: 100%;
-            height: 300px;
-
-            object-fit: cover;
-        }
-        .main-nav-bar {
-            padding-top: 11px;
-            padding-bottom: 15px;
-
-            display: flex;
-            justify-content: space-around;
-        }
-        .main-nav-item {
-            font-size: 24px;
-            color: #000000;
-        }
-        .divider {
-            border: 1px solid #999494;
-        }
-
-        .form-container {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .form-content {
-            text-align: center;
-        }
-
-        .form-title {
-            text-align: center;
-        }
-
-        .row-label {
-            text-align: right;
-            vertical-align: top;
-        }
-
-        .form-input {
-            width: 100%;
-        }
-
-        .form-textarea {
-            width: 100%;
-        }
-
-        .form-button-container{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .form-btn {
-            width: 150px;
-            height: 60px;
-            
-            font-size: 24px;
-            color: #FFFFFF;
-
-            background-color: #1A8FDD;
-            
-            border: 0;
-            border-radius: 10px;
-        }
-    </style>
-    <script></script>
+    <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
     <div class="container">
@@ -114,16 +15,16 @@
                 <img class="side-nav-icon" src="/test/asset/image/home 1 (1).png"/>
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="/test/asset/image/home 1 (1).png" />
+                <img class="side-nav-icon" src="/test/asset/image/coffee_icon.png" />
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="/test/asset/image/home 1 (1).png" />
+                <img class="side-nav-icon" src="/test/asset/image/paper.png" />
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="/test/asset/image/home 1 (1).png" />
+                <img class="side-nav-icon" src="/test/asset/image/tv.png" />
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="/test/asset/image/home 1 (1).png" />
+                <img class="side-nav-icon" src="/test/asset/image/call.png" />
             </a>
         </div>
         <div class="main-container">
@@ -147,12 +48,12 @@
                         </tr>
                         <tr class="form-table-row">
                             <td class="row-label">작성자</td>
-                            <td colspan="3"><input id="writer" name="writer" class="form-input" type="text" /></td>
+                            <td colspan="3"><input id="writer" name="writer" class="form-input" type="text"/></td>
                         </tr>
                         <tr class="form-table-row">
                             <td class="row-label">답변받을 이메일</td>
-                            <td><input id="emailId" name="emailId" class="form-input" type="text" /></td>
-                            <td>@</td>
+                            <td><input id="emailId" name="emailId" class="form-input" type="text"/></td>
+                            <td class="aaa">@</td>
                             <td>
                                 <select id="emailAddress" name="emailAddress" class="form-select">
                                     <option value="gmail.com" selected>gmail.com</option>
